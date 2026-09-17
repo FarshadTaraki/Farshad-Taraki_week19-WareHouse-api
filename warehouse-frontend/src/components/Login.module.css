@@ -1,0 +1,137 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 65px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #282828;
+}
+
+.form {
+  width: 470px;
+  min-height: 520px;
+  margin-top: 125px;
+  padding: 42px 35px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e4e4e4;
+  border-radius: 38px;
+}
+
+.logo {
+  width: 100%;
+  margin-bottom: 58px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 85px;
+  object-fit: contain;
+}
+
+.logo p {
+  margin-top: 15px;
+
+  font-size: 23px;
+  font-weight: 600;
+
+  color: #282828;
+}
+
+.form input {
+  width: 100%;
+  height: 53px;
+  margin-bottom: 15px;
+  padding: 0 16px;
+
+  border: none;
+  outline: none;
+  border-radius: 15px;
+
+  background-color: #f1f1f1;
+
+  font-size: 15px;
+  color: #282828;
+
+  direction: rtl;
+  text-align: right;
+}
+
+.form input::placeholder {
+  color: #28282880;
+}
+
+.form input:focus {
+  box-shadow: 0 0 0 2px rgba(85, 163, 240, 0.2);
+}
+
+.form > button {
+  width: 100%;
+  height: 53px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 15px;
+
+  background-color: #55a3f0;
+
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+
+  transition: 0.2s;
+}
+
+.form > button:hover:not(:disabled) {
+  background-color: #438fdb;
+}
+
+.form > button:disabled {
+  cursor: not-allowed;
+}
+
+.create {
+  width: 100%;
+  margin-top: 16px;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.create a {
+  color: #3a8bed;
+
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.create a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  width: 100%;
+  margin-top: -5px;
+  margin-bottom: 8px;
+
+  color: #f43f5e;
+
+  font-size: 13px;
+  text-align: right;
+}

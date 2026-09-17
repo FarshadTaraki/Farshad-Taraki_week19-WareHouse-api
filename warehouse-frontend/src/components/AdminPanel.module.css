@@ -1,0 +1,359 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 28px 0 25px;
+
+  background-color: #f8f8fa;
+}
+
+.header {
+  width: min(1140px, calc(100% - 40px));
+  height: 68px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 17px;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  line-height: 1.2;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #282828;
+}
+
+.userRole {
+  margin-top: 4px;
+
+  font-size: 12px;
+  color: #686868;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #4e9de8, #1d588e);
+
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.headerDivider {
+  width: 1px;
+  height: 42px;
+  margin-right: 7px;
+
+  background-color: #dedede;
+}
+
+.logoutButton {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: #777777;
+}
+
+.logoutButton:hover {
+  color: #55a3f0;
+}
+
+/* Search */
+
+.header > div:first-child {
+  flex: 1;
+}
+
+.search {
+  width: 230px;
+  height: 42px;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 8px;
+
+  color: #282828;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 14px;
+
+  color: #282828;
+
+  text-align: right;
+}
+
+.search input::placeholder {
+  color: #777777;
+}
+
+/* Main */
+
+.main {
+  width: min(1140px, calc(100% - 40px));
+  margin: 40px auto 0;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #282828;
+}
+
+.title h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.addButton {
+  width: 132px;
+  height: 46px;
+
+  border: none;
+  border-radius: 11px;
+
+  background-color: #55a3f0;
+
+  color: #ffffff;
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.addButton:hover {
+  background-color: #438fd8;
+}
+
+/* Pagination */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 25px;
+}
+
+.pagination button,
+.currentPage {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.pagination button {
+  border: 2px solid #cfcfcf;
+  background-color: transparent;
+
+  color: #a5a5a5;
+  font-size: 23px;
+}
+
+.pagination button:hover:not(:disabled) {
+  border-color: #55a3f0;
+  color: #55a3f0;
+}
+
+.pagination button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.currentPage {
+  background-color: #55a3f0;
+
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Delete Modal */
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  padding: 20px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.38);
+
+  backdrop-filter: blur(6px);
+}
+
+.deleteModal {
+  width: 470px;
+  min-height: 335px;
+  padding: 50px 70px 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #ffffff;
+
+  border-radius: 28px;
+}
+
+.deleteIcon {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 25px;
+
+  background: linear-gradient(135deg, #ff6986, #f53c60);
+
+  transform: rotate(-8deg);
+
+  box-shadow: 8px -7px 0 rgba(255, 104, 133, 0.35);
+}
+
+.deleteIcon span {
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: 300;
+
+  transform: rotate(8deg);
+}
+
+.deleteText {
+  margin-bottom: 30px;
+
+  color: #282828;
+
+  font-size: 17px;
+  text-align: center;
+}
+
+.deleteActions {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row-reverse;
+
+  gap: 18px;
+}
+
+.cancelButton,
+.confirmDeleteButton {
+  flex: 1;
+
+  height: 43px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 14px;
+}
+
+.cancelButton {
+  background-color: #dedede;
+  color: #555555;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background-color: #d2d2d2;
+}
+
+.confirmDeleteButton {
+  background-color: #f43f5e;
+  color: #ffffff;
+}
+
+.confirmDeleteButton:hover:not(:disabled) {
+  background-color: #e63252;
+}
+
+@media (max-width: 700px) {
+  .header {
+    width: calc(100% - 24px);
+  }
+
+  .main {
+    width: calc(100% - 24px);
+  }
+
+  .userInfo {
+    display: none;
+  }
+
+  .deleteModal {
+    width: 100%;
+    padding: 40px 25px 30px;
+  }
+
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .addButton {
+    width: 120px;
+  }
+}
